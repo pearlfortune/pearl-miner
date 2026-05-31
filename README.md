@@ -37,13 +37,11 @@ Methodology: hashrate is the measured single-GPU P90 hashrate from live telemetr
 | RTX 3080 Ti | 103.70 TH/s | 349.1 W |
 | RTX 3060 Ti | 40.12 TH/s | 119.8 W |
 | RTX 5070 | 103.02 TH/s | 175.0 W |
-| NVIDIA vGPU-32GB | 176.25 TH/s | 309.7 W |
 | RTX 3070 Laptop | 44.82 TH/s | 109.1 W |
 | RTX 3060 | 35.82 TH/s | 114.8 W |
 | RTX 4080 SUPER | 176.06 TH/s | 319.6 W |
 | NVIDIA L40S | 218.83 TH/s | 349.3 W |
 | RTX 5090 D | 283.78 TH/s | 575.0 W |
-| NVIDIA Graphics Device | 47.84 TH/s | 96.5 W |
 | RTX 3080 Laptop | 54.60 TH/s | 88.7 W |
 | RTX PRO 6000 Blackwell | 302.09 TH/s | 500.0 W |
 | Tesla V100S-PCIE-32GB | 33.68 TH/s | 197.2 W |
