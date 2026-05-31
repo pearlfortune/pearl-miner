@@ -46,3 +46,12 @@ Methodology: hashrate is the measured single-GPU P90 hashrate from live telemetr
 | RTX PRO 6000 Blackwell | 302.09 TH/s | 500.0 W |
 | Tesla V100S-PCIE-32GB | 33.68 TH/s | 197.2 W |
 | RTX 3070 Ti Laptop | 46.32 TH/s | 90.8 W |
+
+## Get Started
+
+```
+./miner \
+--proxy jp.pearlfortune.org:443 \
+--address  {prl-address} \
+-gpu
+```
