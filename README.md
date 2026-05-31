@@ -47,6 +47,7 @@ Methodology: hashrate is the measured single-GPU P90 hashrate from live telemetr
 | Tesla V100S-PCIE-32GB | 33.68 TH/s | 197.2 W |
 | RTX 3070 Ti Laptop | 46.32 TH/s | 90.8 W |
 
+
 ## Get Started
 
 ```
