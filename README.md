@@ -56,6 +56,7 @@ Methodology: hashrate is the measured single-GPU P90 hashrate from live telemetr
 ./miner \
 --proxy jp.pearlfortune.org:443 \
 --address {prl-address} \
+--worker $(hostname) \
 -gpu
 ```
 
