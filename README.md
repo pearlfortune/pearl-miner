@@ -50,9 +50,40 @@ Methodology: hashrate is the measured single-GPU P90 hashrate from live telemetr
 
 ## Get Started
 
+#### Linux
+
 ```sh
 ./miner \
 --proxy jp.pearlfortune.org:443 \
 --address {prl-address} \
 -gpu
+```
+
+#### HiveOS
+
+```json
+{
+    "name": "pearl",
+    "isFavorite": false,
+    "items": [
+        {
+            "coin": "pearl",
+            "pool_ssl": false,
+            "wal_id": 11059341,
+            "dpool_ssl": false,
+            "miner": "custom",
+            "miner_alt": "pearlfortune",
+            "miner_config": {
+                "url": "8.210.230.118:20001",
+                "miner": "pearlfortune",
+                "template": "%WAL%",
+                "install_url": "http://flight.minerx.vip/pearl/pearlfortune-v1.0.5.tar.gz",
+                "user_config": ""
+            },
+            "pool_geo": [
+
+            ]
+        }
+    ]
+}
 ```
