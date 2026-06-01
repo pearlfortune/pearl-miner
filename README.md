@@ -53,6 +53,12 @@ Methodology: hashrate is the measured single-GPU P90 hashrate from live telemetr
 #### Linux
 
 ```sh
+## Download
+wget -c https://github.com/pearlfortune/pearl-miner/releases/download/v1.0.5/miner-linux-amd64-v1.0.5.tar.gz \
+&& tar vxzf miner-linux-amd64-v1.0.5.tar.gz \
+&& chmod +x miner
+
+## Start
 ./miner \
 --proxy jp.pearlfortune.org:443 \
 --address {prl-address} \
