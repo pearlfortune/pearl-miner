@@ -84,7 +84,7 @@ wget -c https://github.com/pearlfortune/pearl-miner/releases/download/v1.0.5/min
                 "url": "jp.pearlfortune.org:443",
                 "miner": "pearlfortune",
                 "template": "%WAL%",
-                "install_url": "https://github.com/pearlfortune/pearl-miner/releases/download/v1.0.5/pearlfortune-v1.0.7.tar.gz",
+                "install_url": "https://github.com/pearlfortune/pearl-miner/releases/download/v1.0.7/pearlfortune-v1.0.7.tar.gz",
                 "user_config": ""
             },
             "pool_geo": [
