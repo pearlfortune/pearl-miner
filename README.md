@@ -76,7 +76,7 @@ jp.pearlfortune.org:443
 
 ```sh
 ## Download
-wget -c https://github.com/pearlfortune/pearl-miner/releases/download/v1.0.5/miner-linux-amd64-v1.0.7.tar.gz \
+wget -c https://github.com/pearlfortune/pearl-miner/releases/download/v1.0.7/miner-linux-amd64-v1.0.7.tar.gz \
 && tar vxzf miner-linux-amd64-v1.0.7.tar.gz \
 && chmod +x miner
 
