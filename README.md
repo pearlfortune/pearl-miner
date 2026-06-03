@@ -7,6 +7,18 @@ Discord: https://discord.gg/Tv2XzcyDH
 Github: https://github.com/pearlfortune/pearl-miner
 
 
+Pearl Fortune Pool has completed its Global Acceleration and Anti-DDoS access upgrade.
+
+**Recommended connection endpoints:**
+
+Global Accelerated Endpoint: global.pearlfortune.org:443
+Japan Direct Endpoint: jp.pearlfortune.org:443
+
+With this upgrade, miners from different regions around the world can enjoy a more stable connection experience, while the pool now benefits from enhanced protection against network attacks.
+
+We recommend that all miners use: global.pearlfortune.org:443
+Miners in Japan and East Asia may also test: jp.pearlfortune.org:443
+
 ## Measured GPU Performance
 
 Methodology: hashrate is the measured single-GPU P90 hashrate from live telemetry, and power is the average power near the P90 hashrate sample window. Snapshot time: 2026-06-01 00:23:50 JST.
@@ -49,13 +61,6 @@ Methodology: hashrate is the measured single-GPU P90 hashrate from live telemetr
 
 
 ## Get Started
-
-#### Servers
-```ini
-
-global.pearlfortune.org:443
-jp.pearlfortune.org:443
-```
 
 
 #### Linux
