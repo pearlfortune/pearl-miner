@@ -65,6 +65,12 @@ Methodology: hashrate is the measured single-GPU P90 hashrate from live telemetr
 
 ## Get Started
 
+#### Servers
+
+```ini
+global.pearlfortune.org:443
+jp.pearlfortune.org:443
+```
 
 #### Linux
 
