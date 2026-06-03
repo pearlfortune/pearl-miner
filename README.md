@@ -11,15 +11,15 @@ Pearl Fortune Pool has completed its Global Acceleration and Anti-DDoS access up
 
 **Recommended connection endpoints:**
 
-Global Accelerated Endpoint: global.pearlfortune.org:443
+Global Accelerated Endpoint: `global.pearlfortune.org:443`
 
-Japan Direct Endpoint: jp.pearlfortune.org:443
+Japan Direct Endpoint: `jp.pearlfortune.org:443`
 
 With this upgrade, miners from different regions around the world can enjoy a more stable connection experience, while the pool now benefits from enhanced protection against network attacks.
 
-We recommend that all miners use: global.pearlfortune.org:443
+We recommend that all miners use: `global.pearlfortune.org:443`
 
-Miners in Japan and East Asia may also test: jp.pearlfortune.org:443
+Miners in Japan and East Asia may also test: `jp.pearlfortune.org:443`
 
 
 ## Measured GPU Performance
