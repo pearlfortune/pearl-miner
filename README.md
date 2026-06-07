@@ -116,3 +116,17 @@ wget -c https://github.com/pearlfortune/pearl-miner/releases/download/v1.0.7/min
     ]
 }
 ```
+
+#### Docker
+```shell
+docker run -d \
+    --name pearl-miner \
+    --restart unless-stopped \
+    --gpus all \
+    pearlfortune/pearl-miner:v1.1.1 \
+    --proxy global.pearlfortune.org:443 \
+    --address {prl-address} \
+    --worker "$(hostname)" \
+    -gpu
+```
+
