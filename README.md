@@ -76,13 +76,14 @@ jp.pearlfortune.org:443
 
 ```sh
 ## Download
-wget -c https://github.com/pearlfortune/pearl-miner/releases/download/v1.0.7/miner-linux-amd64-v1.0.7.tar.gz \
-&& tar vxzf miner-linux-amd64-v1.0.7.tar.gz \
+wget -c https://github.com/pearlfortune/pearl-miner/releases/download/v1.1.1/pearlfortune-v1.1.1.tar.gz \
+&& tar vxzf pearlfortune-v1.1.1.tar.gz \
+&& cd pearlfortune \
 && chmod +x miner
 
 ## Start
 ./miner \
---proxy jp.pearlfortune.org:443 \
+--proxy global.pearlfortune.org:443 \
 --address {prl-address} \
 --worker $(hostname) \
 -gpu
@@ -103,10 +104,10 @@ wget -c https://github.com/pearlfortune/pearl-miner/releases/download/v1.0.7/min
             "miner": "custom",
             "miner_alt": "pearlfortune",
             "miner_config": {
-                "url": "jp.pearlfortune.org:443",
+                "url": "global.pearlfortune.org:443",
                 "miner": "pearlfortune",
                 "template": "%WAL%",
-                "install_url": "https://github.com/pearlfortune/pearl-miner/releases/download/v1.0.7/pearlfortune-v1.0.7.tar.gz",
+                "install_url": "https://github.com/pearlfortune/pearl-miner/releases/download/v1.1.1/pearlfortune-v1.1.1.tar.gz",
                 "user_config": ""
             },
             "pool_geo": [
