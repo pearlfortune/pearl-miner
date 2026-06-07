@@ -119,6 +119,7 @@ wget -c https://github.com/pearlfortune/pearl-miner/releases/download/v1.0.7/min
 
 #### Docker
 ```shell
+## Start
 docker run -d \
     --name pearl-miner \
     --restart unless-stopped \
@@ -128,5 +129,8 @@ docker run -d \
     --address {prl-address} \
     --worker "$(hostname)" \
     -gpu
+
+## Logs
+docker logs -f pearl-miner
 ```
 
