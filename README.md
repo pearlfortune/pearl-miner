@@ -140,3 +140,7 @@ docker run -d \
 docker logs -f pearl-miner
 ```
 
+#### Windows
+```cmd
+miner.exe --proxy global.pearlfortune.org:443 --address {prl-address} --worker workername -gpu
+```
