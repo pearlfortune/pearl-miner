@@ -141,6 +141,18 @@ docker logs -f pearl-miner
 ```
 
 #### Windows
+
+1. Download and unzip `miner-windows-v1.1.4.zip`.
+2. Right-click `start-miner.bat` → **Edit**, then set:
+   - `WALLET` — your PRL payout address
+   - `WORKER` — a name for this rig (e.g. `rig01`)
+   - `PROXY`  — leave as `global.pearlfortune.org:443` unless told otherwise
+3. Double-click `start-miner.bat`.
+
+The launcher restarts the miner automatically 5 seconds after it exits.
+Close the window (or press `Ctrl+C`) to stop.
+
 ```cmd
+## Manual / advanced run
 miner.exe --proxy global.pearlfortune.org:443 --address {prl-address} --worker workername -gpu
 ```
