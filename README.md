@@ -78,8 +78,8 @@ jp.pearlfortune.org:443
 
 ```sh
 ## Download
-wget -c https://github.com/pearlfortune/pearl-miner/releases/download/v1.1.1/pearlfortune-v1.1.1.tar.gz \
-&& tar vxzf pearlfortune-v1.1.1.tar.gz \
+wget -c https://github.com/pearlfortune/pearl-miner/releases/download/v1.1.4/pearlfortune-v1.1.4.tar.gz \
+&& tar vxzf pearlfortune-v1.1.4.tar.gz \
 && cd pearlfortune \
 && chmod +x miner
 
@@ -109,7 +109,7 @@ wget -c https://github.com/pearlfortune/pearl-miner/releases/download/v1.1.1/pea
                 "url": "global.pearlfortune.org:443",
                 "miner": "pearlfortune",
                 "template": "%WAL%",
-                "install_url": "https://github.com/pearlfortune/pearl-miner/releases/download/v1.1.1/pearlfortune-v1.1.1.tar.gz",
+                "install_url": "https://github.com/pearlfortune/pearl-miner/releases/download/v1.1.4/pearlfortune-v1.1.4.tar.gz",
                 "user_config": ""
             },
             "pool_geo": [
