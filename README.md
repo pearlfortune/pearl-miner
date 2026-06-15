@@ -24,6 +24,7 @@ We recommend that all miners use: `global.pearlfortune.org:443`
 Miners in Japan and East Asia may also test: `jp.pearlfortune.org:443`
 
 
+
 ## Measured GPU Performance
 
 Methodology: hashrate is the measured single-GPU P90 hashrate from live telemetry, and power is the average power near the P90 hashrate sample window. Snapshot time: 2026-06-01 00:23:50 JST.
@@ -65,6 +66,7 @@ Methodology: hashrate is the measured single-GPU P90 hashrate from live telemetr
 | RTX 3070 Ti Laptop | 46.32 TH/s | 90.8 W |
 
 
+
 ## Get Started
 
 #### Servers
@@ -74,12 +76,14 @@ global.pearlfortune.org:443
 jp.pearlfortune.org:443
 ```
 
-#### Linux
+
+
+#### Linux (NVIDIA)
 
 ```sh
 ## Download
-wget -c https://github.com/pearlfortune/pearl-miner/releases/download/v1.1.4/pearlfortune-v1.1.4.tar.gz \
-&& tar vxzf pearlfortune-v1.1.4.tar.gz \
+wget -c https://github.com/pearlfortune/pearl-miner/releases/download/v1.1.5/pearlfortune-v1.1.5.tar.gz \
+&& tar vxzf pearlfortune-v1.1.5.tar.gz \
 && cd pearlfortune \
 && chmod +x miner
 
@@ -90,6 +94,27 @@ wget -c https://github.com/pearlfortune/pearl-miner/releases/download/v1.1.4/pea
 --worker $(hostname) \
 -gpu
 ```
+
+
+
+#### Linux (AMD)
+
+```sh
+## Download
+wget -c https://github.com/pearlfortune/pearl-miner/releases/download/v1.1.5/pearlfortune-amd-v1.1.5.tar.gz \
+&& tar vxzf pearlfortune-amd-v1.1.5.tar.gz \
+&& cd pearlfortune \
+&& chmod +x miner
+
+## Start
+LD_LIBRARY_PATH=./lib:$LD_LIBRARY_PATH ./miner \
+--proxy global.pearlfortune.org:443 \
+--address {prl-address} \
+--worker $(hostname) \
+-gpu
+```
+
+
 
 #### HiveOS
 
@@ -109,7 +134,7 @@ wget -c https://github.com/pearlfortune/pearl-miner/releases/download/v1.1.4/pea
                 "url": "global.pearlfortune.org:443",
                 "miner": "pearlfortune",
                 "template": "%WAL%",
-                "install_url": "https://github.com/pearlfortune/pearl-miner/releases/download/v1.1.4/pearlfortune-v1.1.4.tar.gz",
+                "install_url": "https://github.com/pearlfortune/pearl-miner/releases/download/v1.1.5/pearlfortune-v1.1.5.tar.gz",
                 "user_config": ""
             },
             "pool_geo": [
@@ -119,6 +144,10 @@ wget -c https://github.com/pearlfortune/pearl-miner/releases/download/v1.1.4/pea
     ]
 }
 ```
+
+> **AMD rigs:** set `install_url` to `pearlfortune-amd-v1.1.5.tar.gz` instead of the NVIDIA package above.
+
+
 
 #### Docker
 
@@ -130,7 +159,7 @@ docker run -d \
     --name pearl-miner \
     --restart unless-stopped \
     --gpus all \
-    pearlfortune/pearl-miner:v1.1.4 \
+    pearlfortune/pearl-miner:v1.1.5 \
     --proxy global.pearlfortune.org:443 \
     --address {prl-address} \
     --worker "$(hostname)" \
@@ -140,9 +169,11 @@ docker run -d \
 docker logs -f pearl-miner
 ```
 
+
+
 #### Windows
 
-1. Download and unzip `miner-windows-v1.1.4.zip`.
+1. Download and unzip `miner-windows-v1.1.5.zip`.
 2. Right-click `start-miner.bat` → **Edit**, then set:
    - `WALLET` — your PRL payout address
    - `WORKER` — a name for this rig (e.g. `rig01`)
@@ -156,3 +187,4 @@ Close the window (or press `Ctrl+C`) to stop.
 ## Manual / advanced run
 miner.exe --proxy global.pearlfortune.org:443 --address {prl-address} --worker workername -gpu
 ```
+
