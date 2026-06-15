@@ -149,7 +149,7 @@ LD_LIBRARY_PATH=./lib:$LD_LIBRARY_PATH ./miner \
 
 
 
-#### Docker
+#### Docker (NVIDIA)
 
 https://hub.docker.com/r/pearlfortune/pearl-miner 
 
