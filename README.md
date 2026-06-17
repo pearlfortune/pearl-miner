@@ -82,8 +82,8 @@ jp.pearlfortune.org:443
 
 ```sh
 ## Download
-wget -c https://github.com/pearlfortune/pearl-miner/releases/download/v1.1.5/pearlfortune-v1.1.5.tar.gz \
-&& tar vxzf pearlfortune-v1.1.5.tar.gz \
+wget -c https://github.com/pearlfortune/pearl-miner/releases/download/v1.1.6/pearlfortune-v1.1.6.tar.gz \
+&& tar vxzf pearlfortune-v1.1.6.tar.gz \
 && cd pearlfortune \
 && chmod +x miner
 
@@ -101,7 +101,7 @@ wget -c https://github.com/pearlfortune/pearl-miner/releases/download/v1.1.5/pea
 
 ```sh
 ## Download
-wget -c https://github.com/pearlfortune/pearl-miner/releases/download/v1.1.5/pearlfortune-amd-v1.1.6.tar.gz \
+wget -c https://github.com/pearlfortune/pearl-miner/releases/download/v1.1.6/pearlfortune-amd-v1.1.6.tar.gz \
 && tar vxzf pearlfortune-amd-v1.1.6.tar.gz \
 && cd pearlfortune \
 && chmod +x miner
