@@ -161,7 +161,7 @@ LD_LIBRARY_PATH=./lib:$LD_LIBRARY_PATH ./miner \
 https://hub.docker.com/r/pearlfortune/pearl-miner 
 
 ```shell
-## Start - CUDA 12
+## Start
 docker run -d \
     --name pearl-miner \
     --restart unless-stopped \
