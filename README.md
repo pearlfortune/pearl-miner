@@ -27,43 +27,65 @@ Miners in Japan and East Asia may also test: `jp.pearlfortune.org:443`
 
 ## Measured GPU Performance
 
-Methodology: hashrate is the measured single-GPU P90 hashrate from live telemetry, and power is the average power near the P90 hashrate sample window. Snapshot time: 2026-06-01 00:23:50 JST.
+
+Methodology: hashrate is the measured single-GPU P90 hashrate from live telemetry, and power is the average power near the P90 hashrate sample window. Snapshot time: 2026-06-27 00:51:48 JST.
+
+### NVIDIA RTX 50 Series
 
 | GPU | Hashrate | Power |
 |---|---:|---:|
-| RTX 4090 | 265.81 TH/s | 449.0 W |
-| RTX 4070 Ti SUPER | 154.44 TH/s | 284.5 W |
-| A100-PCIE-40GB | 191.83 TH/s | 249.9 W |
-| RTX 5090 | 322.45 TH/s | 575.8 W |
-| RTX 4070 SUPER | 111.19 TH/s | 194.8 W |
-| RTX 4090 D | 239.61 TH/s | 420.8 W |
-| RTX 4070 | 104.38 TH/s | 196.3 W |
-| RTX 5060 | 64.61 TH/s | 95.7 W |
-| RTX 5060 Ti | 77.32 TH/s | 120.8 W |
-| RTX 3080 | 93.01 TH/s | 319.3 W |
-| RTX 3090 | 104.22 TH/s | 348.3 W |
-| RTX 3070 | 46.92 TH/s | 142.8 W |
-| RTX 4070 Ti | 121.61 TH/s | 180.0 W |
-| A100-SXM4-80GB | 221.56 TH/s | 401.9 W |
-| RTX 4060 Ti | 67.78 TH/s | 110.0 W |
-| Tesla V100-SXM2-32GB | 48.83 TH/s | 275.4 W |
-| RTX 5090 D v2 | 284.66 TH/s | 575.0 W |
-| RTX 5080 | 161.26 TH/s | 309.8 W |
-| NVIDIA L20 | 109.58 TH/s | 279.5 W |
-| RTX 5070 Ti | 146.19 TH/s | 293.3 W |
-| MetaX C500 | 109.24 TH/s | 306.7 W |
-| RTX 3080 Ti | 103.70 TH/s | 349.1 W |
-| RTX 3060 Ti | 40.12 TH/s | 119.8 W |
-| RTX 5070 | 103.02 TH/s | 175.0 W |
-| RTX 3070 Laptop | 44.82 TH/s | 109.1 W |
-| RTX 3060 | 35.82 TH/s | 114.8 W |
-| RTX 4080 SUPER | 176.06 TH/s | 319.6 W |
-| NVIDIA L40S | 218.83 TH/s | 349.3 W |
-| RTX 5090 D | 283.78 TH/s | 575.0 W |
-| RTX 3080 Laptop | 54.60 TH/s | 88.7 W |
-| RTX PRO 6000 Blackwell | 302.09 TH/s | 500.0 W |
-| Tesla V100S-PCIE-32GB | 33.68 TH/s | 197.2 W |
-| RTX 3070 Ti Laptop | 46.32 TH/s | 90.8 W |
+| RTX 5090 | 359.17 TH/s | 581.2 W |
+| RTX 5090 D v2 | 282.21 TH/s | 572.8 W |
+| RTX 5090 D | 278.54 TH/s | 444.8 W |
+| RTX 5080 | 210.64 TH/s | 349.3 W |
+| RTX 5070 Ti | 178.19 TH/s | 266.9 W |
+| RTX 5070 | 126.75 TH/s | 228.5 W |
+| RTX 5060 Ti | 93.92 TH/s | 155.4 W |
+| RTX 5060 | 74.68 TH/s | 112.7 W |
+
+### NVIDIA RTX 40 Series
+
+| GPU | Hashrate | Power |
+|---|---:|---:|
+| RTX 4090 | 288.21 TH/s | 447.3 W |
+| RTX 4090 D | 260.39 TH/s | 409.1 W |
+| RTX 4080 SUPER | 190.95 TH/s | 313.9 W |
+| RTX 4070 Ti SUPER | 158.65 TH/s | 259.4 W |
+| RTX 4070 Ti | 144.71 TH/s | 234.1 W |
+| RTX 4070 SUPER | 133.92 TH/s | 216.9 W |
+| RTX 4070 | 111.50 TH/s | 193.4 W |
+| RTX 4060 Ti | 79.14 TH/s | 128.8 W |
+
+### NVIDIA RTX 30 Series
+
+| GPU | Hashrate | Power |
+|---|---:|---:|
+| RTX 3090 | 119.67 TH/s | 354.4 W |
+| RTX 3080 Ti | 117.82 TH/s | 348.5 W |
+| RTX 3080 | 107.61 TH/s | 285.3 W |
+| RTX 3080 Laptop | 64.40 TH/s | 86.3 W |
+| RTX 3070 Ti Laptop | 59.47 TH/s | 96.3 W |
+| RTX 3070 Laptop | 55.75 TH/s | 92.8 W |
+| RTX 3070 | 70.28 TH/s | 176.5 W |
+| RTX 3060 Ti | 57.44 TH/s | 159.9 W |
+| RTX 3060 | 45.77 TH/s | 167.7 W |
+
+### NVIDIA Data Center and Workstation
+
+| GPU | Hashrate | Power |
+|---|---:|---:|
+| RTX PRO 6000 Blackwell | 329.85 TH/s | 476.7 W |
+| NVIDIA L40S | 223.75 TH/s | 349.9 W |
+| A100-SXM4-80GB | 240.38 TH/s | 392.7 W |
+| A100-PCIE-40GB | 197.16 TH/s | 247.2 W |
+| NVIDIA L20 | 101.02 TH/s | 312.2 W |
+| Tesla V100-SXM2-32GB | 31.08 TH/s | 286.3 W |
+
+### Other GPUs
+
+| GPU | Hashrate | Power |
+|---|---:|---:|
+| MetaX C500 | 109.34 TH/s | 296.2 W |
 
 
 
