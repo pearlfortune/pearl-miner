@@ -104,8 +104,8 @@ jp.pearlfortune.org:443
 
 ```sh
 ## Download
-wget -c https://github.com/pearlfortune/pearl-miner/releases/download/v1.1.8/pearlfortune-v1.1.8.tar.gz \
-&& tar vxzf pearlfortune-v1.1.8.tar.gz \
+wget -c https://github.com/pearlfortune/pearl-miner/releases/download/v1.2.1/pearlfortune-v1.2.1.tar.gz \
+&& tar vxzf pearlfortune-v1.2.1.tar.gz \
 && cd pearlfortune
 
 
@@ -130,8 +130,8 @@ wget -c https://github.com/pearlfortune/pearl-miner/releases/download/v1.1.8/pea
 
 ```sh
 ## Download
-wget -c https://github.com/pearlfortune/pearl-miner/releases/download/v1.1.7/pearlfortune-amd-v1.1.7.tar.gz \
-&& tar vxzf pearlfortune-amd-v1.1.7.tar.gz \
+wget -c https://github.com/pearlfortune/pearl-miner/releases/download/v1.2.1/pearlfortune-amd-v1.2.1.tar.gz \
+&& tar vxzf pearlfortune-amd-v1.2.1.tar.gz \
 && cd pearlfortune \
 && chmod +x miner
 
@@ -163,7 +163,7 @@ LD_LIBRARY_PATH=./lib:$LD_LIBRARY_PATH ./miner \
                 "url": "global.pearlfortune.org:443",
                 "miner": "pearlfortune",
                 "template": "%WAL%",
-                "install_url": "https://github.com/pearlfortune/pearl-miner/releases/download/v1.1.8/pearlfortune-v1.1.8.tar.gz",
+                "install_url": "https://github.com/pearlfortune/pearl-miner/releases/download/v1.2.1/pearlfortune-v1.2.1.tar.gz",
                 "user_config": ""
             },
             "pool_geo": [
@@ -174,7 +174,7 @@ LD_LIBRARY_PATH=./lib:$LD_LIBRARY_PATH ./miner \
 }
 ```
 
-> **AMD rigs:** set `install_url` to `pearlfortune-amd-v1.1.8.tar.gz` instead of the NVIDIA package above.
+> **AMD rigs:** set `install_url` to `pearlfortune-amd-v1.2.1.tar.gz` instead of the NVIDIA package above.
 
 
 
@@ -188,7 +188,7 @@ docker run -d \
     --name pearl-miner \
     --restart unless-stopped \
     --gpus all \
-    pearlfortune/pearl-miner:v1.1.8 \
+    pearlfortune/pearl-miner:v1.2.1 \
     --proxy global.pearlfortune.org:443 \
     --address {prl-address} \
     --worker "$(hostname)" \
@@ -202,7 +202,7 @@ docker logs -f pearl-miner
 
 #### Windows
 
-1. Download and unzip `miner-windows-v1.1.8.zip`.
+1. Download and unzip `miner-windows-v1.2.1.zip`.
 2. Right-click `start-miner.bat` → **Edit**, then set:
    - `WALLET` — your PRL payout address
    - `WORKER` — a name for this rig (e.g. `rig01`)
