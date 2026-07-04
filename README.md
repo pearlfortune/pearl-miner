@@ -105,7 +105,7 @@ jp.pearlfortune.org:443
 ```sh
 ## Download
 wget -c https://github.com/pearlfortune/pearl-miner/releases/download/v1.2.2/pearlfortune-v1.2.2.tar.gz \
-&& tar vxzf pearlfortune-v1.2.1.tar.gz \
+&& tar vxzf pearlfortune-v1.2.2.tar.gz \
 && cd pearlfortune
 
 
