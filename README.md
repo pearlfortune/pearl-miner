@@ -2,7 +2,7 @@
 
 Website: https://pearlfortune.org/
 
-Discord: https://discord.gg/Tv2XzcyDH
+Discord: https://discord.gg/aDJwPb3rW
 
 Github: https://github.com/pearlfortune/pearl-miner
 
