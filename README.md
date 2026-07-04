@@ -145,7 +145,7 @@ LD_LIBRARY_PATH=./lib:$LD_LIBRARY_PATH ./miner \
 
 
 
-#### HiveOS
+#### HiveOS (NVIDIA)
 
 ```json
 {
@@ -155,7 +155,6 @@ LD_LIBRARY_PATH=./lib:$LD_LIBRARY_PATH ./miner \
         {
             "coin": "pearl",
             "pool_ssl": false,
-            "wal_id": 11059341,
             "dpool_ssl": false,
             "miner": "custom",
             "miner_alt": "pearlfortune",
@@ -174,8 +173,33 @@ LD_LIBRARY_PATH=./lib:$LD_LIBRARY_PATH ./miner \
 }
 ```
 
-> **AMD rigs:** set `install_url` to `pearlfortune-amd-v1.2.2.tar.gz` instead of the NVIDIA package above.
 
+#### HiveOS (AMD)
+
+```json
+{
+    "name": "pearl - amd",
+    "isFavorite": false,
+    "items": [
+        {
+            "coin": "PEARL",
+            "pool_ssl": false,
+            "dpool_ssl": false,
+            "miner": "custom",
+            "miner_alt": "pearlfortune-amd",
+            "miner_config": {
+                "url": "global.pearlfortune.org:443",
+                "miner": "pearlfortune-amd",
+                "template": "%WAL%",
+                "install_url": "https://github.com/pearlfortune/pearl-miner/releases/download/v1.2.2/pearlfortune-amd-v1.2.2.fix.tar.gz"
+            },
+            "pool_geo": [
+
+            ]
+        }
+    ]
+}
+```
 
 
 #### Docker (NVIDIA)
