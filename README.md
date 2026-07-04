@@ -130,8 +130,8 @@ wget -c https://github.com/pearlfortune/pearl-miner/releases/download/v1.2.2/pea
 
 ```sh
 ## Download
-wget -c https://github.com/pearlfortune/pearl-miner/releases/download/v1.2.1/pearlfortune-amd-v1.2.1.tar.gz \
-&& tar vxzf pearlfortune-amd-v1.2.1.tar.gz \
+wget -c https://github.com/pearlfortune/pearl-miner/releases/download/v1.2.2/pearlfortune-amd-v1.2.2.tar.gz \
+&& tar vxzf pearlfortune-amd-v1.2.2.tar.gz \
 && cd pearlfortune \
 && chmod +x miner
 
@@ -174,7 +174,7 @@ LD_LIBRARY_PATH=./lib:$LD_LIBRARY_PATH ./miner \
 }
 ```
 
-> **AMD rigs:** set `install_url` to `pearlfortune-amd-v1.2.1.tar.gz` instead of the NVIDIA package above.
+> **AMD rigs:** set `install_url` to `pearlfortune-amd-v1.2.2.tar.gz` instead of the NVIDIA package above.
 
 
 
