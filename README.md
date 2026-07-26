@@ -104,8 +104,8 @@ jp.pearlfortune.org:443
 
 ```sh
 ## Download
-wget -c https://github.com/pearlfortune/pearl-miner/releases/download/v1.2.4/pearlfortune-v1.2.4.tar.gz \
-&& tar vxzf pearlfortune-v1.2.4.tar.gz \
+wget -c https://github.com/pearlfortune/pearl-miner/releases/download/v2.0.3/pearlfortune-v2.0.3.tar.gz \
+&& tar vxzf pearlfortune-v2.0.3.tar.gz \
 && cd pearlfortune
 
 
@@ -162,7 +162,7 @@ LD_LIBRARY_PATH=./lib:$LD_LIBRARY_PATH ./miner \
                 "url": "global.pearlfortune.org:443",
                 "miner": "pearlfortune",
                 "template": "%WAL%",
-                "install_url": "https://github.com/pearlfortune/pearl-miner/releases/download/v1.2.4/pearlfortune-v1.2.4.tar.gz",
+                "install_url": "https://github.com/pearlfortune/pearl-miner/releases/download/v2.0.3/pearlfortune-v2.0.3.tar.gz",
                 "user_config": ""
             },
             "pool_geo": [
