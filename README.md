@@ -212,7 +212,7 @@ docker run -d \
     --name pearl-miner \
     --restart unless-stopped \
     --gpus all \
-    pearlfortune/pearl-miner:v1.2.4 \
+    pearlfortune/pearl-miner:v2.0.3 \
     --proxy global.pearlfortune.org:443 \
     --address {prl-address} \
     --worker "$(hostname)" \
