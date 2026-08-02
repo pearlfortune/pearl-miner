@@ -132,8 +132,8 @@ jp.pearlfortune.org:443
 
 ```sh
 ## Download
-wget -c https://github.com/pearlfortune/pearl-miner/releases/download/v2.0.8/pearlfortune-v2.0.8.tar.gz \
-&& tar vxzf pearlfortune-v2.0.8.tar.gz \
+wget -c https://github.com/pearlfortune/pearl-miner/releases/download/v2.0.9/pearlfortune-v2.0.9.tar.gz \
+&& tar vxzf pearlfortune-v2.0.9.tar.gz \
 && cd pearlfortune
 
 
@@ -190,7 +190,7 @@ LD_LIBRARY_PATH=./lib:$LD_LIBRARY_PATH ./miner \
                 "url": "global.pearlfortune.org:443",
                 "miner": "pearlfortune",
                 "template": "%WAL%",
-                "install_url": "https://github.com/pearlfortune/pearl-miner/releases/download/v2.0.8/pearlfortune-v2.0.8.tar.gz",
+                "install_url": "https://github.com/pearlfortune/pearl-miner/releases/download/v2.0.9/pearlfortune-v2.0.9.tar.gz",
                 "user_config": ""
             },
             "pool_geo": [
@@ -240,7 +240,7 @@ docker run -d \
     --name pearl-miner \
     --restart unless-stopped \
     --gpus all \
-    pearlfortune/pearl-miner:v2.0.8 \
+    pearlfortune/pearl-miner:v2.0.9 \
     --proxy global.pearlfortune.org:443 \
     --address {prl-address} \
     --worker "$(hostname)" \
