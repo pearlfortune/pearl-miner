@@ -132,7 +132,7 @@ jp.pearlfortune.org:443
 
 ```sh
 ## Download
-wget -c https://github.com/pearlfortune/pearl-miner/releases/download/v2.1.0/pearlfortune-v2.1.0.tar.gz \
+wget -c https://github.com/pearlfortune/pearl-miner/releases/download/v2.1.0/pearlfortune-v2.1.1.tar.gz \
 && tar vxzf pearlfortune-v2.1.0.tar.gz \
 && cd pearlfortune
 
@@ -201,6 +201,34 @@ LD_LIBRARY_PATH=./lib:$LD_LIBRARY_PATH ./miner \
 }
 ```
 
+
+#### HiveOS (NVIDIA) - https://pool.kryptex.com/prl
+
+```json
+{
+    "name": "pearl",
+    "isFavorite": false,
+    "items": [
+        {
+            "coin": "pearl",
+            "pool_ssl": false,
+            "dpool_ssl": false,
+            "miner": "custom",
+            "miner_alt": "pearlfortune",
+            "miner_config": {
+                "url": "stratum+ssl://prl.kryptex.network:8048",
+                "miner": "pearlfortune",
+                "template": "%WAL%",
+                "install_url": "https://github.com/pearlfortune/pearl-miner/releases/download/v2.1.0/pearlfortune-v2.1.0.tar.gz",
+                "user_config": "--stratum-dialect kryptex_prl"
+            },
+            "pool_geo": [
+
+            ]
+        }
+    ]
+}
+```
 
 #### HiveOS (AMD)
 
