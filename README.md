@@ -153,26 +153,6 @@ wget -c https://github.com/pearlfortune/pearl-miner/releases/download/v2.1.5/pea
 ```
 
 
-
-#### Linux (AMD)
-
-```sh
-## Download
-wget -c https://github.com/pearlfortune/pearl-miner/releases/download/v1.2.4/pearlfortune-amd-v1.2.4.tar.gz \
-&& tar vxzf pearlfortune-amd-v1.2.4.tar.gz \
-&& cd pearlfortune \
-&& chmod +x miner
-
-## Start
-LD_LIBRARY_PATH=./lib:$LD_LIBRARY_PATH ./miner \
---proxy global.pearlfortune.org:443 \
---address {prl-address} \
---worker $(hostname) \
--gpu
-```
-
-
-
 #### HiveOS (NVIDIA)
 
 ```json
@@ -230,33 +210,6 @@ LD_LIBRARY_PATH=./lib:$LD_LIBRARY_PATH ./miner \
 }
 ```
 
-#### HiveOS (AMD)
-
-```json
-{
-    "name": "pearl - amd",
-    "isFavorite": false,
-    "items": [
-        {
-            "coin": "PEARL",
-            "pool_ssl": false,
-            "dpool_ssl": false,
-            "miner": "custom",
-            "miner_alt": "pearlfortune-amd",
-            "miner_config": {
-                "url": "global.pearlfortune.org:443",
-                "miner": "pearlfortune-amd",
-                "template": "%WAL%",
-                "install_url": "https://github.com/pearlfortune/pearl-miner/releases/download/v1.2.4/pearlfortune-amd-v1.2.4.tar.gz"
-            },
-            "pool_geo": [
-
-            ]
-        }
-    ]
-}
-```
-
 
 #### Docker (NVIDIA)
 
@@ -276,24 +229,5 @@ docker run -d \
 
 ## Logs
 docker logs -f pearl-miner
-```
-
-
-
-#### Windows
-
-1. Download and unzip `miner-windows-v1.2.4.zip`.
-2. Right-click `start-miner.bat` → **Edit**, then set:
-   - `WALLET` — your PRL payout address
-   - `WORKER` — a name for this rig (e.g. `rig01`)
-   - `PROXY`  — leave as `global.pearlfortune.org:443` unless told otherwise
-3. Double-click `start-miner.bat`.
-
-The launcher restarts the miner automatically 5 seconds after it exits.
-Close the window (or press `Ctrl+C`) to stop.
-
-```cmd
-## Manual / advanced run
-miner.exe --proxy global.pearlfortune.org:443 --address {prl-address} --worker workername -gpu
 ```
 
