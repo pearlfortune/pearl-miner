@@ -234,7 +234,7 @@ docker logs -f pearl-miner
 
 #### Windows
 
-1. Download and unzip `miner-windows-v1.2.4.zip`.
+1. Download and unzip `miner-windows-v2.1.5.zip`.
 2. Right-click `start-miner.bat` -> Edit, then set:
    - `WALLET` — your PRL payout address
    - `WORKER` — a name for this rig (e.g. `rig01`)
