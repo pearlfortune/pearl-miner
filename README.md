@@ -132,8 +132,8 @@ jp.pearlfortune.org:443
 
 ```sh
 ## Download
-wget -c https://github.com/pearlfortune/pearl-miner/releases/download/v2.1.5/pearlfortune-v2.1.5.tar.gz \
-&& tar vxzf pearlfortune-v2.1.5.tar.gz \
+wget -c https://github.com/pearlfortune/pearl-miner/releases/download/v2.1.6/pearlfortune-v2.1.6.tar.gz \
+&& tar vxzf pearlfortune-v2.1.6.tar.gz \
 && cd pearlfortune
 
 
@@ -170,7 +170,7 @@ wget -c https://github.com/pearlfortune/pearl-miner/releases/download/v2.1.5/pea
                 "url": "global.pearlfortune.org:443",
                 "miner": "pearlfortune",
                 "template": "%WAL%",
-                "install_url": "https://github.com/pearlfortune/pearl-miner/releases/download/v2.1.5/pearlfortune-v2.1.5.tar.gz",
+                "install_url": "https://github.com/pearlfortune/pearl-miner/releases/download/v2.1.6/pearlfortune-v2.1.6.tar.gz",
                 "user_config": ""
             },
             "pool_geo": [
@@ -199,7 +199,7 @@ wget -c https://github.com/pearlfortune/pearl-miner/releases/download/v2.1.5/pea
                 "url": "stratum+ssl://prl.kryptex.network:8048",
                 "miner": "pearlfortune",
                 "template": "%WAL%",
-                "install_url": "https://github.com/pearlfortune/pearl-miner/releases/download/v2.1.5/pearlfortune-v2.1.5.tar.gz",
+                "install_url": "https://github.com/pearlfortune/pearl-miner/releases/download/v2.1.6/pearlfortune-v2.1.6.tar.gz",
                 "user_config": "--stratum-dialect kryptex_prl"
             },
             "pool_geo": [
@@ -221,7 +221,7 @@ docker run -d \
     --name pearl-miner \
     --restart unless-stopped \
     --gpus all \
-    pearlfortune/pearl-miner:v2.1.5 \
+    pearlfortune/pearl-miner:v2.1.6 \
     --proxy global.pearlfortune.org:443 \
     --address {prl-address} \
     --worker "$(hostname)" \
@@ -234,7 +234,7 @@ docker logs -f pearl-miner
 
 #### Windows
 
-1. Download and unzip `miner-windows-v2.1.5.zip`.
+1. Download and unzip `miner-windows-v2.1.6.zip`.
 2. Right-click `start-miner.bat` -> Edit, then set:
    - `WALLET` — your PRL payout address
    - `WORKER` — a name for this rig (e.g. `rig01`)
