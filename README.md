@@ -27,7 +27,7 @@ Miners in Japan and East Asia may also test: `jp.pearlfortune.org:443`
 
 ## Measured GPU Performance
 
-Methodology: hashrate is the measured single-GPU P90 hashrate from live telemetry, and power is the average power near the P90 hashrate sample window. Snapshot time: 2026-08-01 22:16:16 JST.
+The following hash rate table is based on statistics from version v2.2.6.
 
 ### NVIDIA RTX 50 Series
 
