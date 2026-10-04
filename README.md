@@ -27,7 +27,7 @@ Miners in Japan and East Asia may also test: `jp.pearlfortune.org:443`
 
 ## Measured GPU Performance
 
-The following hash rate table is based on statistics from version v2.2.7.
+The following hash rate table is based on statistics from version v2.2.8.
 
 ### NVIDIA RTX 50 Series
 
@@ -126,8 +126,8 @@ jp.pearlfortune.org:443
 
 ```sh
 ## Download
-wget -c https://github.com/pearlfortune/pearl-miner/releases/download/v2.2.7/pearlfortune-v2.2.7.tar.gz \
-&& tar vxzf pearlfortune-v2.2.7.tar.gz \
+wget -c https://github.com/pearlfortune/pearl-miner/releases/download/v2.2.8/pearlfortune-v2.2.8.tar.gz \
+&& tar vxzf pearlfortune-v2.2.8.tar.gz \
 && cd pearlfortune
 
 
@@ -164,7 +164,7 @@ wget -c https://github.com/pearlfortune/pearl-miner/releases/download/v2.2.7/pea
                 "url": "global.pearlfortune.org:443",
                 "miner": "pearlfortune",
                 "template": "%WAL%",
-                "install_url": "https://github.com/pearlfortune/pearl-miner/releases/download/v2.2.7/pearlfortune-v2.2.7.tar.gz",
+                "install_url": "https://github.com/pearlfortune/pearl-miner/releases/download/v2.2.8/pearlfortune-v2.2.8.tar.gz",
                 "user_config": ""
             },
             "pool_geo": [
@@ -175,34 +175,6 @@ wget -c https://github.com/pearlfortune/pearl-miner/releases/download/v2.2.7/pea
 }
 ```
 
-
-#### HiveOS (NVIDIA) - https://pool.kryptex.com/prl
-
-```json
-{
-    "name": "pearl",
-    "isFavorite": false,
-    "items": [
-        {
-            "coin": "pearl",
-            "pool_ssl": false,
-            "dpool_ssl": false,
-            "miner": "custom",
-            "miner_alt": "pearlfortune",
-            "miner_config": {
-                "url": "stratum+ssl://prl.kryptex.network:8048",
-                "miner": "pearlfortune",
-                "template": "%WAL%",
-                "install_url": "https://github.com/pearlfortune/pearl-miner/releases/download/v2.2.7/pearlfortune-v2.2.7.tar.gz",
-                "user_config": "--stratum-dialect kryptex_prl"
-            },
-            "pool_geo": [
-
-            ]
-        }
-    ]
-}
-```
 
 
 #### Docker (NVIDIA)
@@ -215,7 +187,7 @@ docker run -d \
     --name pearl-miner \
     --restart unless-stopped \
     --gpus all \
-    pearlfortune/pearl-miner:v2.2.7 \
+    pearlfortune/pearl-miner:v2.2.8 \
     --proxy global.pearlfortune.org:443 \
     --address {prl-address} \
     --worker "$(hostname)" \
