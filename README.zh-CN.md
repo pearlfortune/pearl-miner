@@ -30,18 +30,18 @@
 
 ### 双挖与结算方式
 
-- **PRL + NOCK：**PF Pool 支持双挖，**双挖时只需指定 PRL 收益地址。**
-- **PRL：**支持 PPS 和 PPLNS 两种结算方式，默认采用 PPS。
-- **NOCK：**仅支持 PPLNS 结算方式。
-- **切换 PRL 的 PPS / PPLNS 结算方式：**请联系管理员。
+- **PRL + NOCK**：PF Pool 支持双挖，**双挖时只需指定 PRL 收益地址。**
+- **PRL**：支持 PPS 和 PPLNS 两种结算方式，默认采用 PPS。
+- **NOCK**：仅支持 PPLNS 结算方式。
+- **切换 PRL 的 PPS / PPLNS 结算方式**：请联系管理员。
 
 ### 连接注意事项
 
-- **SSL 支持：**两个端口都支持 SSL。
-- **矿工连接格式：**部分实测命令使用 `stratum+tcp://`，HiveOS 飞行表中的 `pool_ssl` 也设为 `false`。请保持各示例中的协议和 SSL 字段原样；改为 `stratum+ssl://` 或打开 HiveOS 的 SSL 开关，可能导致部分矿工兼容性报错。
-- **密码：**矿池密码不是必填项。部分飞行表中的 `"pass": "x"` 属于实测配置示例，并非 PF Pool 的强制要求。
-- **地区：**下方示例默认使用全球地址。如需尝试日本地址，请将命令或飞行表中所有 `global.pearlfortune.org` 替换为 `jp.pearlfortune.org`；飞行表中包括 `pool_urls`、`miner_config.url`，以及包含地址时的 `miner_config.user_config`。端口保持不变。
-- **钱包：**命令中的 `YOUR_PRL_ADDRESS` 应替换为你的 PRL 公共收益地址。HiveOS JSON 中的 `%WAL%` 和 `%WORKER_NAME%` 由 HiveOS 自动填入，请勿改动。
+- **SSL 支持**：两个端口都支持 SSL。
+- **矿工连接格式**：部分实测命令使用 `stratum+tcp://`，HiveOS 飞行表中的 `pool_ssl` 也设为 `false`。请保持各示例中的协议和 SSL 字段原样；改为 `stratum+ssl://` 或打开 HiveOS 的 SSL 开关，可能导致部分矿工兼容性报错。
+- **密码**：矿池密码不是必填项。部分飞行表中的 `"pass": "x"` 属于实测配置示例，并非 PF Pool 的强制要求。
+- **地区**：下方示例默认使用全球地址。如需尝试日本地址，请将命令或飞行表中所有 `global.pearlfortune.org` 替换为 `jp.pearlfortune.org`；飞行表中包括 `pool_urls`、`miner_config.url`，以及包含地址时的 `miner_config.user_config`。端口保持不变。
+- **钱包**：命令中的 `YOUR_PRL_ADDRESS` 应替换为你的 PRL 公共收益地址。HiveOS JSON 中的 `%WAL%` 和 `%WORKER_NAME%` 由 HiveOS 自动填入，请勿改动。
 
 ### 使用 HiveOS 飞行表
 
