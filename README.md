@@ -1,5 +1,7 @@
 # Pearl Fortune Mining Guide
 
+[English](./README.md) | [简体中文](./README.zh-CN.md)
+
 Pearl Fortune pool setup for the official miner and third-party mining software.
 
 - [Website](https://pearlfortune.org/)
