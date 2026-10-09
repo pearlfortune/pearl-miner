@@ -412,6 +412,65 @@ bzminer.exe -a pearl -p stratum+tcp://global.pearlfortune.org:8888 -w YOUR_PRL_A
 }
 ```
 
+
+
+### OneZeroMiner
+
+https://github.com/OneZeroMiner/onezerominer/releases
+
+> 如果您在 30xx、40xx 或 50xx 系列显卡上进行了延迟超频，请务必手动选择内核 2。
+>
+> `--kernel 2`
+
+**Linux**
+
+```sh
+wget https://github.com/OneZeroMiner/onezerominer/releases/download/v1.8.0/onezerominer-1.8.0.tar.gz
+tar xzf onezerominer-1.8.0.tar.gz && cd onezerominer
+./onezerominer --algo=pearl --wallet=YOUR_PRL_ADDRESS --pool=global.pearlfortune.org:8888
+```
+
+**Windows**
+
+```sh
+onezerominer.exe --algo=pearl --wallet=YOUR_PRL_ADDRESS --pool=global.pearlfortune.org:8888
+```
+
+**HiveOS**
+
+```json
+{
+  "name": "PF_Pearl_OneZeroMiner",
+  "isFavorite": false,
+  "items": [
+    {
+      "coin": "PRL",
+      "pool_ssl": false,
+      "pool_urls": [
+        "global.pearlfortune.org:8888"
+      ],
+      "dpool_ssl": false,
+      "miner": "custom",
+      "miner_alt": "onezerominer",
+      "miner_config": {
+        "url": "global.pearlfortune.org:8888",
+        "algo": "pearl",
+        "pass": "x",
+        "miner": "onezerominer",
+        "template": "%WAL%",
+        "install_url": "https://github.com/OneZeroMiner/onezerominer/releases/download/v1.8.0/onezerominer-1.8.0.tar.gz",
+        "user_config": ""
+      },
+      "pool_geo": []
+    }
+  ]
+}
+```
+
+
+
+
+
 ## 检查挖矿结果
 
 启动矿工后，请确认以下三项：
