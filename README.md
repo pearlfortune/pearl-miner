@@ -427,7 +427,7 @@ https://github.com/OneZeroMiner/onezerominer/releases
 ```sh
 wget https://github.com/OneZeroMiner/onezerominer/releases/download/v1.8.0/onezerominer-1.8.0.tar.gz
 tar xzf onezerominer-1.8.0.tar.gz && cd onezerominer
-./onezerominer --algo=pearl --wallet=YOUR_PRL_ADDRESS --pool=global.pearlfortune.org:8888
+./onezerominer --algo=pearl --wallet=YOUR_PRL_ADDRESS --pool=global.pearlfortune.org:8888 --worker $(hostname)
 ```
 
 **Windows**
@@ -459,7 +459,7 @@ onezerominer.exe --algo=pearl --wallet=YOUR_PRL_ADDRESS --pool=global.pearlfortu
         "miner": "onezerominer",
         "template": "%WAL%",
         "install_url": "https://github.com/OneZeroMiner/onezerominer/releases/download/v1.8.0/onezerominer-1.8.0.tar.gz",
-        "user_config": ""
+        "user_config": "--worker %WORKER_NAME%"
       },
       "pool_geo": []
     }
