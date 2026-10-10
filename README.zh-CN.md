@@ -421,6 +421,9 @@ https://github.com/OneZeroMiner/onezerominer/releases
 > 如果您在 30xx、40xx 或 50xx 系列显卡上进行了延迟超频，请务必手动选择内核 2。
 >
 > `--kernel 2`
+>
+> 可以增加以下参数，防止 15 分钟没有提交就重连矿池的问题
+> `--max-no-acc 60`
 
 **Linux**
 
