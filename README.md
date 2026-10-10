@@ -421,6 +421,9 @@ https://github.com/OneZeroMiner/onezerominer/releases
 > If you have a delayed OC on 30xx, 40xx, or 50xx series, make sure you manually select kernel 2.
 >
 > `--kernel 2`
+>
+> You can add the following parameter to prevent the miner from reconnecting to the pool if no shares are submitted for 15 minutes:
+> `--max-no-acc 60`
 
 **Linux**
 
