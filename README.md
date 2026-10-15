@@ -60,8 +60,8 @@ Official miner examples use port `443`. Use `jp.pearlfortune.org:443` as an alte
 Download and enter the extracted directory:
 
 ```sh
-wget -c https://github.com/pearlfortune/pearl-miner/releases/download/v2.2.9/pearlfortune-v2.2.9.tar.gz \
-&& tar vxzf pearlfortune-v2.2.9.tar.gz \
+wget -c https://github.com/pearlfortune/pearl-miner/releases/download/v2.3.2/pearlfortune-v2.3.2.tar.gz \
+&& tar vxzf pearlfortune-v2.3.2.tar.gz \
 && cd pearlfortune
 ```
 
@@ -106,7 +106,7 @@ The official Pearl Fortune HiveOS flight sheet selects the CUDA executable autom
                 "url": "global.pearlfortune.org:443",
                 "miner": "pearlfortune",
                 "template": "%WAL%",
-                "install_url": "https://github.com/pearlfortune/pearl-miner/releases/download/v2.2.9/pearlfortune-v2.2.9.tar.gz",
+                "install_url": "https://github.com/pearlfortune/pearl-miner/releases/download/v2.3.2/pearlfortune-v2.3.2.tar.gz",
                 "user_config": ""
             },
             "pool_geo": [
@@ -127,7 +127,7 @@ docker run -d \
     --name pearl-miner \
     --restart unless-stopped \
     --gpus all \
-    pearlfortune/pearl-miner:v2.2.9 \
+    pearlfortune/pearl-miner:v2.3.2 \
     --proxy global.pearlfortune.org:443 \
     --address YOUR_PRL_ADDRESS \
     --worker "$(hostname)" \
@@ -139,7 +139,7 @@ docker logs -f pearl-miner
 
 ### Windows
 
-1. Download and unzip `miner-windows-v2.2.9.zip` from the [official v2.2.9 release](https://github.com/pearlfortune/pearl-miner/releases/tag/v2.2.9).
+1. Download and unzip `miner-windows-v2.2.9.zip`
 2. Right-click `start-miner.bat` -> Edit, then set:
    - `WALLET` — your PRL payout address
    - `WORKER` — a name for this rig (e.g. `rig01`)
