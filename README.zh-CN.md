@@ -139,7 +139,7 @@ docker logs -f pearl-miner
 
 ### Windows
 
-1. 下载并解压 `miner-windows-v2.2.9.zip`。
+1. 下载并解压 `miner-windows-v2.3.2.zip`。
 2. 右键单击 `start-miner.bat`，选择“编辑”，然后设置：
    - `WALLET`：你的 PRL 收益地址
    - `WORKER`：这台矿机的名称，例如 `rig01`
