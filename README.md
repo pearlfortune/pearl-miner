@@ -145,7 +145,7 @@ The launcher restarts the miner automatically 5 seconds after it exits. Close th
 
 ```bat
 REM Manual / advanced run
-miner.exe --proxy global.pearlfortune.org:443 --address YOUR_PRL_ADDRESS --worker workername -gpu
+miner.exe --proxy global.pearlfortune.org:443 --address YOUR_PRL_ADDRESS --worker workername
 ```
 
 ## Third-Party Mining Software
