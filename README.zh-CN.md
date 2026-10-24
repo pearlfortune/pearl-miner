@@ -71,8 +71,7 @@ wget -c https://github.com/pearlfortune/pearl-miner/releases/download/v2.3.4/pea
 ./miner-cuda12 \
 --proxy global.pearlfortune.org:443 \
 --address YOUR_PRL_ADDRESS \
---worker $(hostname) \
--gpu
+--worker $(hostname)
 ```
 
 **CUDA 13**
@@ -81,8 +80,7 @@ wget -c https://github.com/pearlfortune/pearl-miner/releases/download/v2.3.4/pea
 ./miner-cuda13 \
 --proxy global.pearlfortune.org:443 \
 --address YOUR_PRL_ADDRESS \
---worker $(hostname) \
--gpu
+--worker $(hostname)
 ```
 
 ### HiveOS（NVIDIA）
@@ -128,8 +126,7 @@ docker run -d \
     pearlfortune/pearl-miner:v2.3.4 \
     --proxy global.pearlfortune.org:443 \
     --address YOUR_PRL_ADDRESS \
-    --worker "$(hostname)" \
-    -gpu
+    --worker "$(hostname)"
 
 ## Logs
 docker logs -f pearl-miner
@@ -148,7 +145,7 @@ docker logs -f pearl-miner
 
 ```bat
 REM Manual / advanced run
-miner.exe --proxy global.pearlfortune.org:443 --address YOUR_PRL_ADDRESS --worker workername -gpu
+miner.exe --proxy global.pearlfortune.org:443 --address YOUR_PRL_ADDRESS --worker workername
 ```
 
 ## 第三方挖矿软件
