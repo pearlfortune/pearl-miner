@@ -72,7 +72,6 @@ Run the command matching the CUDA version supported by your driver:
 --proxy global.pearlfortune.org:443 \
 --address YOUR_PRL_ADDRESS \
 --worker $(hostname) \
--gpu
 ```
 
 **CUDA 13**
@@ -82,7 +81,6 @@ Run the command matching the CUDA version supported by your driver:
 --proxy global.pearlfortune.org:443 \
 --address YOUR_PRL_ADDRESS \
 --worker $(hostname) \
--gpu
 ```
 
 ### HiveOS (NVIDIA)
@@ -128,8 +126,7 @@ docker run -d \
     pearlfortune/pearl-miner:v2.3.4 \
     --proxy global.pearlfortune.org:443 \
     --address YOUR_PRL_ADDRESS \
-    --worker "$(hostname)" \
-    -gpu
+    --worker "$(hostname)"
 
 ## Logs
 docker logs -f pearl-miner
