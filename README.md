@@ -30,9 +30,7 @@ Pearl Fortune pool setup for the official miner and third-party mining software.
 
 ### Dual Mining and Reward Schemes
 
-- **PRL + NOCK:** PF Pool supports dual mining. **Only a PRL payout address is required for dual mining.**
 - **PRL:** PPS and PPLNS are available; PPS is the default.
-- **NOCK:** PPLNS only.
 - **To switch PRL between PPS and PPLNS:** Contact an administrator.
 
 ### Connection Notes
