@@ -58,8 +58,8 @@
 下载并进入解压目录：
 
 ```sh
-wget -c https://github.com/pearlfortune/pearl-miner/releases/download/v2.3.4/pearlfortune-v2.3.4.tar.gz \
-&& tar vxzf pearlfortune-v2.3.4.tar.gz \
+wget -c https://github.com/pearlfortune/pearl-miner/releases/download/v2.3.7/pearlfortune-v2.3.7.tar.gz \
+&& tar vxzf pearlfortune-v2.3.7.tar.gz \
 && cd pearlfortune
 ```
 
@@ -102,7 +102,7 @@ Pearl Fortune 官方 HiveOS 飞行表会根据当前驱动自动选择 CUDA 程�
                 "url": "global.pearlfortune.org:443",
                 "miner": "pearlfortune",
                 "template": "%WAL%",
-                "install_url": "https://github.com/pearlfortune/pearl-miner/releases/download/v2.3.4/pearlfortune-v2.3.4.tar.gz",
+                "install_url": "https://github.com/pearlfortune/pearl-miner/releases/download/v2.3.7/pearlfortune-v2.3.7.tar.gz",
                 "user_config": ""
             },
             "pool_geo": [
@@ -123,7 +123,7 @@ docker run -d \
     --name pearl-miner \
     --restart unless-stopped \
     --gpus all \
-    pearlfortune/pearl-miner:v2.3.4 \
+    pearlfortune/pearl-miner:v2.3.7 \
     --proxy global.pearlfortune.org:443 \
     --address YOUR_PRL_ADDRESS \
     --worker "$(hostname)"
@@ -134,7 +134,7 @@ docker logs -f pearl-miner
 
 ### Windows
 
-1. 下载并解压 `miner-windows-v2.3.3.zip`。
+1. 下载并解压 `miner-windows-v2.x.x.zip`。
 2. 右键单击 `start-miner.bat`，选择“编辑”，然后设置：
    - `WALLET`：你的 PRL 收益地址
    - `WORKER`：这台矿机的名称，例如 `rig01`
