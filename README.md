@@ -71,7 +71,7 @@ Run the command matching the CUDA version supported by your driver:
 ./miner-cuda12 \
 --proxy global.pearlfortune.org:443 \
 --address YOUR_PRL_ADDRESS \
---worker $(hostname) \
+--worker $(hostname)
 ```
 
 **CUDA 13**
@@ -80,7 +80,7 @@ Run the command matching the CUDA version supported by your driver:
 ./miner-cuda13 \
 --proxy global.pearlfortune.org:443 \
 --address YOUR_PRL_ADDRESS \
---worker $(hostname) \
+--worker $(hostname)
 ```
 
 ### HiveOS (NVIDIA)
