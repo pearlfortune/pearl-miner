@@ -485,80 +485,103 @@ The following hash rate table is based on statistics from version v2.2.6.
 
 ### NVIDIA RTX 50 Series
 
-| GPU             |    Hashrate |   Power |
-| --------------- | ----------: | ------: |
-| RTX 5090        | 402.27 TH/s | 573.3 W |
-| RTX 5090 D v2   | 285.74 TH/s | 573.6 W |
-| RTX 5090 D      | 273.42 TH/s |       — |
-| RTX 5080        | 218.03 TH/s | 334.8 W |
-| RTX 5070 Ti     | 187.72 TH/s | 253.5 W |
-| RTX 5070        | 125.03 TH/s | 186.0 W |
-| RTX 5070 Laptop |  90.51 TH/s |       — |
-| RTX 5060 Ti     |  96.11 TH/s | 149.8 W |
-| RTX 5060        |  77.05 TH/s | 128.0 W |
+| GPU                |    Hashrate |   Power |
+| ------------------ | ----------: | ------: |
+| RTX 5090           | 436.78 TH/s | 507.2 W |
+| RTX 5090 D v2      | 312.32 TH/s | 573.3 W |
+| RTX 5090 D         | 288.07 TH/s | 379.1 W |
+| RTX 5080           | 246.76 TH/s | 270.6 W |
+| RTX 5070 Ti        | 205.83 TH/s | 242.7 W |
+| RTX 5070           | 144.46 TH/s | 200.2 W |
+| RTX 5070 Laptop    |  93.10 TH/s |  95.6 W |
+| RTX 5060 Ti        | 111.51 TH/s | 144.6 W |
+| RTX 5060           |  87.70 TH/s | 101.0 W |
+| RTX 5050           |  60.40 TH/s |  72.5 W |
+| RTX 5070 Ti Laptop | 115.41 TH/s | 138.2 W |
+| RTX 5090 Laptop    | 162.37 TH/s | 148.8 W |
 
 ### NVIDIA RTX 40 Series
 
 | GPU               |    Hashrate |   Power |
 | ----------------- | ----------: | ------: |
-| RTX 4090          | 315.67 TH/s | 441.0 W |
-| RTX 4090 D        | 284.45 TH/s | 420.9 W |
-| RTX 4090 Laptop   | 163.36 TH/s | 109.2 W |
-| RTX 4080 SUPER    | 206.49 TH/s | 262.2 W |
-| RTX 4080          | 199.05 TH/s | 281.7 W |
-| RTX 4080 Laptop   | 128.70 TH/s | 109.0 W |
-| RTX 4070 Ti SUPER | 168.87 TH/s | 231.7 W |
-| RTX 4070 Ti       | 162.25 TH/s | 237.6 W |
-| RTX 4070 SUPER    | 144.77 TH/s | 209.6 W |
-| RTX 4070          | 120.39 TH/s | 163.4 W |
-| RTX 4070 Laptop   |  80.67 TH/s |  96.7 W |
-| RTX 4060 Ti       |  86.32 TH/s | 139.3 W |
-| RTX 4060          |  61.54 TH/s |       — |
-| RTX 4060 Laptop   |  54.09 TH/s |  71.8 W |
+| RTX 4090          | 348.36 TH/s | 438.1 W |
+| RTX 4090 D        | 325.89 TH/s | 424.0 W |
+| RTX 4090 Laptop   | 181.58 TH/s |  76.9 W |
+| RTX 4080 SUPER    | 219.43 TH/s | 266.9 W |
+| RTX 4080          | 222.73 TH/s | 305.9 W |
+| RTX 4080 Laptop   | 146.90 TH/s |  91.1 W |
+| RTX 4070 Ti SUPER | 188.21 TH/s | 225.2 W |
+| RTX 4070 Ti       | 170.37 TH/s | 205.7 W |
+| RTX 4070 SUPER    | 155.51 TH/s | 184.9 W |
+| RTX 4070          | 125.24 TH/s | 126.5 W |
+| RTX 4070 Laptop   |  88.15 TH/s |  92.5 W |
+| RTX 4060 Ti       |  91.63 TH/s | 107.5 W |
+| RTX 4060          |  64.44 TH/s |       — |
+| RTX 4060 Laptop   |  61.35 TH/s |  95.2 W |
 
 ### NVIDIA RTX 30 Series
 
 | GPU                |    Hashrate |   Power |
 | ------------------ | ----------: | ------: |
-| RTX 3090           | 119.65 TH/s | 343.1 W |
-| RTX 3080 Ti        | 129.68 TH/s | 301.7 W |
-| RTX 3080           | 106.73 TH/s | 304.1 W |
-| RTX 3080 Laptop    |  70.10 TH/s |  90.6 W |
-| RTX 3070 Ti        |  73.50 TH/s | 175.9 W |
-| RTX 3070 Ti Laptop |  70.74 TH/s |  75.0 W |
-| RTX 3070           |  72.74 TH/s | 162.9 W |
-| RTX 3070 Laptop    |  59.55 TH/s |  95.2 W |
-| RTX 3060 Ti        |  59.82 TH/s | 145.1 W |
-| RTX 3060           |  47.50 TH/s | 115.7 W |
-| RTX 3060 Laptop    |  42.08 TH/s |  52.4 W |
+| RTX 3090           | 141.09 TH/s | 333.1 W |
+| RTX 3080 Ti        | 144.52 TH/s | 277.5 W |
+| RTX 3080           | 124.78 TH/s | 259.5 W |
+| RTX 3080 Laptop    |  77.19 TH/s |  74.5 W |
+| RTX 3070 Ti        |  90.45 TH/s | 194.4 W |
+| RTX 3070 Ti Laptop |  76.89 TH/s |  87.6 W |
+| RTX 3070           |  82.56 TH/s | 157.6 W |
+| RTX 3070 Laptop    |  65.92 TH/s |  84.7 W |
+| RTX 3060 Ti        |  67.73 TH/s | 133.9 W |
+| RTX 3060           |  53.51 TH/s | 163.1 W |
+| RTX 3060 Laptop    |  53.16 TH/s |  62.8 W |
+| RTX 3050           |  42.43 TH/s | 129.8 W |
+| RTX 3080 Ti Laptop | 100.16 TH/s | 149.6 W |
+| RTX 3090 Ti        | 143.63 TH/s | 288.2 W |
 
 ### NVIDIA RTX 20 Series
 
-| GPU                        |   Hashrate |   Power |
-| -------------------------- | ---------: | ------: |
-| RTX 2080 Ti                | 82.08 TH/s | 235.9 W |
-| RTX 2080                   | 64.33 TH/s |       — |
-| RTX 2070 SUPER             | 61.28 TH/s |       — |
-| RTX 2070                   | 48.30 TH/s |       — |
-| RTX 2070 with Max-Q Design | 38.68 TH/s |       — |
-| RTX 2060 SUPER             | 43.62 TH/s | 123.7 W |
-| RTX 2060                   | 33.90 TH/s |  97.5 W |
+| GPU                        |    Hashrate |   Power |
+| -------------------------- | ----------: | ------: |
+| RTX 2080 Ti                | 110.01 TH/s | 240.4 W |
+| RTX 2080                   |  81.77 TH/s | 186.1 W |
+| RTX 2070 SUPER             |  73.27 TH/s | 200.3 W |
+| RTX 2070                   |  60.28 TH/s | 162.0 W |
+| RTX 2070 with Max-Q Design |  43.83 TH/s |  90.4 W |
+| RTX 2060 SUPER             |  52.54 TH/s | 109.5 W |
+| RTX 2060                   |  48.75 TH/s | 129.5 W |
+| RTX 2080 SUPER             |  89.59 TH/s | 209.9 W |
 
 ### NVIDIA Data Center and Workstation
 
-| GPU                         |    Hashrate |   Power |
-| --------------------------- | ----------: | ------: |
-| H100 80GB HBM3              | 783.10 TH/s | 697.9 W |
-| H800                        | 623.91 TH/s |       — |
-| Tesla T4                    |  30.91 TH/s |  69.2 W |
-| NVIDIA CMP 90HX             |  69.90 TH/s | 248.5 W |
-| NVIDIA CMP 170HX            | 142.97 TH/s |       — |
-| A100-PCIE-40GB              | 215.81 TH/s | 251.2 W |
-| A100-SXM4-80GB              | 211.22 TH/s | 390.3 W |
-| RTX A4000                   |  59.15 TH/s | 139.0 W |
-| NVIDIA CMP 50HX             |  74.00 TH/s | 133.1 W |
-| NVIDIA CMP 40HX             |  41.11 TH/s |       — |
-| RTX A5000                   |  86.06 TH/s | 227.4 W |
-| RTX PRO 5000 72GB Blackwell | 286.19 TH/s |       — |
-| Quadro RTX 6000             |  81.45 TH/s |       — |
-| Tesla T10                   |           — | 127.6 W |
+| GPU                                        |     Hashrate |    Power |
+| ------------------------------------------ | -----------: | -------: |
+| H100 80GB HBM3                             |  820.78 TH/s |  698.4 W |
+| Tesla T4                                   |   36.43 TH/s |   67.9 W |
+| NVIDIA CMP 90HX                            |   94.08 TH/s |  245.4 W |
+| NVIDIA CMP 170HX                           |  179.94 TH/s |  189.9 W |
+| A100-PCIE-40GB                             |  231.27 TH/s |  248.5 W |
+| A100-SXM4-80GB                             |  282.42 TH/s |  398.3 W |
+| RTX A4000                                  |   67.74 TH/s |  139.7 W |
+| NVIDIA CMP 50HX                            |   91.80 TH/s |  161.5 W |
+| NVIDIA CMP 40HX                            |   55.72 TH/s |  133.3 W |
+| RTX PRO 5000 72GB Blackwell                |  306.22 TH/s |  350.0 W |
+| Tesla T10                                  |   76.45 TH/s |  146.2 W |
+| A10                                        |   94.67 TH/s |  149.5 W |
+| A100-SXM4-40GB                             |  247.96 TH/s |        — |
+| A30                                        |  117.13 TH/s |  164.8 W |
+| B200                                       | 1454.43 TH/s |  981.6 W |
+| B300 SXM6 AC                               |  856.46 TH/s | 1085.8 W |
+| H100 NVL                                   |  580.40 TH/s |  396.9 W |
+| H100 PCIe                                  |  503.77 TH/s |        — |
+| H200                                       |  806.99 TH/s |  691.7 W |
+| H800 PCIe                                  |  521.19 TH/s |  346.2 W |
+| L40S                                       |  320.52 TH/s |  349.8 W |
+| NVIDIA CMP 70HX                            |   48.75 TH/s |  115.9 W |
+| Quadro RTX 5000                            |   59.14 TH/s |   61.1 W |
+| RTX 6000 Ada Generation                    |  282.02 TH/s |        — |
+| RTX A2000                                  |   43.62 TH/s |   69.2 W |
+| RTX A2000 12GB                             |   41.97 TH/s |   69.2 W |
+| RTX PRO 6000 Blackwell Server Edition      |  463.68 TH/s |  552.4 W |
+| RTX PRO 6000 Blackwell Workstation Edition |  453.30 TH/s |  500.0 W |
+| Tesla V100-SXM2-16GB                       |   19.86 TH/s |  292.4 W |
+| Tesla V100-SXM2-32GB                       |   50.18 TH/s |        — |
