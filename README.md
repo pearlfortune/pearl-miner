@@ -93,7 +93,7 @@ The official Pearl Fortune HiveOS flight sheet selects the CUDA executable autom
     "isFavorite": false,
     "items": [
         {
-            "coin": "pearl",
+            "coin": "PRL",
             "pool_ssl": false,
             "dpool_ssl": false,
             "miner": "custom",
