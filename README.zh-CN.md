@@ -93,7 +93,7 @@ Pearl Fortune 官方 HiveOS 飞行表会根据当前驱动自动选择 CUDA 程�
     "isFavorite": false,
     "items": [
         {
-            "coin": "pearl",
+            "coin": "PRL",
             "pool_ssl": false,
             "dpool_ssl": false,
             "miner": "custom",
