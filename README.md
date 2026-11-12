@@ -58,8 +58,8 @@ Official miner examples use port `443`. Use `jp.pearlfortune.org:443` as an alte
 Download and enter the extracted directory:
 
 ```sh
-wget -c https://github.com/pearlfortune/pearl-miner/releases/download/v2.3.9/pearlfortune-v2.3.9.tar.gz \
-&& tar vxzf pearlfortune-v2.3.9.tar.gz \
+wget -c https://github.com/pearlfortune/pearl-miner/releases/download/v2.4.0/pearlfortune-v2.4.0.tar.gz \
+&& tar vxzf pearlfortune-v2.4.0.tar.gz \
 && cd pearlfortune
 ```
 
@@ -102,7 +102,7 @@ The official Pearl Fortune HiveOS flight sheet selects the CUDA executable autom
                 "url": "global.pearlfortune.org:443",
                 "miner": "pearlfortune",
                 "template": "%WAL%",
-                "install_url": "https://github.com/pearlfortune/pearl-miner/releases/download/v2.3.9/pearlfortune-v2.3.9.tar.gz",
+                "install_url": "https://github.com/pearlfortune/pearl-miner/releases/download/v2.4.0/pearlfortune-v2.4.0.tar.gz",
                 "user_config": ""
             },
             "pool_geo": [
@@ -123,7 +123,7 @@ docker run -d \
     --name pearl-miner \
     --restart unless-stopped \
     --gpus all \
-    pearlfortune/pearl-miner:v2.3.9 \
+    pearlfortune/pearl-miner:v2.4.0 \
     --proxy global.pearlfortune.org:443 \
     --address YOUR_PRL_ADDRESS \
     --worker "$(hostname)"
