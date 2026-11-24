@@ -479,6 +479,69 @@ After starting the miner, check all three results:
 
 A successful download or HiveOS import alone does not prove that mining works. If the process exits immediately, inspect its log and try the same miner command directly. Check the miner's GPU support before changing a tested pool URL or protocol setting.
 
+## Power-Save Controls (Linux, v2.4.2+)
+
+Five hidden driver settings can lower the power a card draws while mining, mostly on RTX 50 cards. The miner writes them once at startup and restores the original values when it exits. It never picks a value by itself unless you ask for a power-save level.
+
+Requirements: Linux x86_64, NVIDIA driver 595, 610, 615 or 620. On other drivers the miner logs a warning and writes nothing.
+
+**Easiest: power-save levels**
+
+```sh
+./miner-cuda13 \
+--proxy global.pearlfortune.org:443 \
+--address YOUR_PRL_ADDRESS \
+--worker $(hostname) \
+--power-save 1
+```
+
+| Level | What it does |
+| --- | --- |
+| `1` | Low-risk settings only (no core voltage change). Start here. |
+| `2` | Level 1 plus a small core voltage offset. Saves more, but can hang a card that is already overclocked to its limit. |
+| `3` | Same as 2 for now. |
+| `0` | Leave this GPU untouched. |
+
+Measured with level 2, at a locked core clock + core offset and memory locked at 810 MHz, 30 minutes each:
+
+| GPU | Settings | Power | Hashrate |
+| --- | --- | --- | --- |
+| RTX 5080 | 250 W / lock 2900 / +600 | 240.4 → 222.5 W (−7.4 %) | +0.05 % |
+| RTX 5070 Ti | 250 W / lock 3050 / +500 | 240.7 → 225.4 W (−6.4 %) | −0.1 % |
+| RTX 5060 | 125 W / lock 3090 / +550 | 118.7 → 114.2 W (−3.8 %) | −0.1 % |
+| RTX 5060 Ti | 150 W / lock 3010 / +499 | −2.2 % (6 cards) | −0.1 % |
+
+Other GPUs get generic values by CUDA compute capability. They save little: under 2 % on RTX 30 / 40, and nothing on CMP 50HX at 140 W.
+
+Notes:
+
+- The savings above were measured with the core clock locked and a core offset set. Without a core lock the card spends the saved power on higher boost clocks, so you may see no change.
+- RTX 5060 Ti: the level is applied only on driver 615 and only when the miner itself locks the core at 3010 MHz or lower with a core offset of +499 MHz or lower.
+- If a card crashes the miner while a level is on, the next start (within 30 minutes, same boot) runs that card without the level.
+
+**Manual values**
+
+| Flag | Setting | Range | Default |
+| --- | --- | --- | --- |
+| `--xbar-ratio` | XBAR ratio | 0.05 – 1.00 | 0.90 (RTX 5080 / 5070 Ti) |
+| `--msvdd-vmin-mv` | MSVDD minimum voltage (mV) | −500 – 0 | 0 |
+| `--xbar-clock-offset-mhz` | XBAR clock offset (MHz) | −1500 – 0 | 0 |
+| `--vcore-offset-mv` | Core voltage offset (mV) | −200 – 0 | 0 |
+| `--domain-volt-offset-mv` | Voltage offset of all clock domains except the core (mV) | −250 – 0 | 0 |
+
+Like the other overclock flags, each takes one value for all GPUs or a comma-separated list in GPU order; `*` leaves that GPU unchanged. A manual value overrides the same setting from `--power-save`.
+
+```sh
+# RTX 5080: lock 2900 MHz +600, level-2 values written by hand
+--gpu-plimit 250 --gpu-cclock 2900 --gpu-coffset 600 \
+--xbar-ratio 0.306 --msvdd-vmin-mv -150 --vcore-offset-mv -10
+```
+
+- The core voltage offset is the risky one: a few mV too deep hangs the card (an RTX 5080 at lock 2900 hung at −20 mV). Lower it in −5 mV steps and run each step for at least 30 minutes.
+- Values beyond what was tested are still written, with a `hidden_power_untested` warning in the log.
+- On HiveOS, add the flags to the flight sheet's **Extra config arguments**.
+
+
 ## Reference GPU Performance
 
 The following hash rate table is based on statistics from version v2.2.6.
